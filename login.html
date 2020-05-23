@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mon entreprise</title>
+        <meta charset="UTF-8">
+        <meta name=" viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style-entreprise.css">
+
+        <script>
+            function onSearch() {
+                alert("Aucun résultat  trouver !!!");
+            }
+
+            function connexion() {
+                var user = document.forms["loginForm"]["user"].value;
+                var password = document.forms["loginForm"]["password"].value;
+
+                if(user == 'najoua.ghrieb@bdeb.qc.ca' && password == 'najoua') {
+                    alert('Bianvenue Najoua !');
+                /*else
+                  alert('Votre identifiant ou mot de passe est incorrect !'); */    
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <div class="entete-principale">
+
+            <div class="titre-entete">
+                <div><em>giga Informatique<br>Montréal</em></div>
+            </div>
+
+
+            <div class="menu-navigation">
+                <nav class="navigation">
+                    <a href="indexentreprise.html">Accueil</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="login.html" class="active">Login</a>
+                </nav>
+            </div>
+
+
+        
+
+            <div class="recherche-element">
+                <div class="recherche-contenu-rel">
+                    <input id="search-input" name="search" placeholder="Rechercher" />
+                    <button id="search-button" onclick="onSearch()"> Rechercher</button>
+                </div>
+            </div>
+
+
+
+            <div class="identifiant-navigation">
+                <nav class="navigation">
+                <a href="blog.html">Blog</a>
+                </nav>
+            </div>
+
+            
+        </div>
+
+          <!--
+        <div class="">
+            <h1 class="title"> >... </h1>
+        </div>
+        -->
+        
+        <div class="contenu">
+            <div class="row">
+                <div class="col-login">
+                    <div class="login-container">
+                        <form name="loginForm" method="POST" action="#" onsubmit="connexion()">
+                            <div class="col-login-input">
+                                <label for="user">Nom d'utilisateur:</label>
+                                <input id="user" type="email" name="user" placeholder="Nom d'utilisateur" required />
+                            </div>
+                    
+                            <div class="col-login-input">
+                                <label for="password">Mot de passe:</label>
+                                <input id="password" type="password" name="password" placeholder="Mot de passe" required />
+                            </div>
+
+                            <div class="col-login-input">
+                                <button type="submit" >Connexion</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="bas_de_page">
+            <h5> Développeurs Web: Madjid.A / Salim.B  </h5>
+            <h5>Email: madjidma@yahoo.fr  / salim@gmail.com - Tél 514-232 2217 <h5>
+        </footer>
+    </body>
+</html>

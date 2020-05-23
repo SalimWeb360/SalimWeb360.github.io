@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mon entreprise</title>
+        <meta charset="UTF-8">
+        <meta name=" viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style-entreprise.css">
+
+        <script>
+            function onSearch() {
+                alert("Aucun résultat  trouver !!!");
+            }
+
+            function envoyer() {
+                confirm("Voulez-vous envoyer le message ?");
+            }
+
+        </script>
+    </head>
+    <body>
+        <div class="entete-principale">
+
+
+            <div class="titre-entete">
+                <div><em>giga Informatique<br>Montréal</em></div>
+            </div>
+
+
+
+            <div class="menu-navigation">
+                <nav class="navigation">
+                    <a href="indexentreprise.html">Accueil</a>
+                    <a href="contact.html" class="active">Contact</a>
+                    <a href="login.html">Login</a>
+                </nav>
+            </div>
+
+                       
+
+            <div class="recherche-element">
+                <div class="recherche-contenu-rel">
+                    <input id="search-input" name="search" placeholder="Rechercher" />
+                    <button id="search-button" onclick="onSearch()"> Rechercher</button>
+                </div>
+            </div>
+
+
+
+            <div class="identifiant-navigation">
+                <nav class="navigation">
+                <a href="blog.html">Blog</a>
+                </nav>
+            </div>
+            
+        </div>
+
+         <!--
+        <div class="">
+            <h1 class="title"> >... </h1>
+        </div>
+        -->
+
+        <div class="contenu">
+            <div class="row">
+                <form method="POST" action="" onsubmit="envoyer()">
+                    <div class="col">
+                        <div class="col-label"> Nom </div>
+                        <div class="col-input"> <input type="text" name="nom" placeholder="Nom" required /> </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-label"> Adresse email </div>
+                        <div class="col-input"> <input type="email" name="email" placeholder="Email" required /> </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-label"> Objet </div>
+                        <div class="col-input"> <input type="text" name="bobjet" placeholder="Objet" required /> </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-label"> Message </div>
+                        <div class="col-input"> <textarea></textarea> </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-label"></div>
+                        <div class="col-input"> <button type="submit" >Envoyer</button> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+         <footer class="bas_de_page">
+            <h5> Développeurs Web: Madjid.A / Salim.B  </h5>
+            <h5>Email: madjidma@yahoo.fr  / salim@gmail.com - Tél 514-232 2217 <h5>
+        </footer>
+    </body>
+</html>
